@@ -1,0 +1,35 @@
+@import 'reset';
+@import 'ux';
+@import 'header';
+@import '404';
+@import 'index';
+@import 'footer';
+@import 'popups';
+@import 'text';
+@import 'autopark';
+@import 'certificate';
+.wrapper {
+    margin: 0 auto;
+    display: flex;
+    flex-direction: column;
+    min-height: 100%;
+}
+
+.content {
+    flex: 1 0 auto;
+    display: flex;
+    flex-direction: column;
+}
+
+@media screen and (min-width: 1370px) {
+    .header,
+    .service-index,
+    .advantages {
+        .container {
+            width: 1370px;
+        }
+    }
+    .container--big {
+        width: 1370px;
+    }
+}

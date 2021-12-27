@@ -1,0 +1,1171 @@
+.autopark {
+    background-image: url(../images/autopark_bg.png);
+    background-size: 100% auto;
+    background-repeat: no-repeat;
+    padding-bottom: 28px;
+    background-position: 0 -20px;
+    &__desc {
+        max-width: 490px;
+        margin: 0 auto;
+        text-align: center;
+        font-size: 14px;
+        line-height: 24px;
+        font-weight: 300;
+        letter-spacing: 0.02em;
+        color: #d6d6d6;
+    }
+    &__tabs {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        margin-top: 45px;
+    }
+    &__tab {
+        padding: 0 35px;
+        margin: 0 5px;
+        height: 46px;
+        background-color: #1d2225;
+        border-radius: 23px;
+        font-size: 13px;
+        font-weight: 400;
+        text-transform: uppercase;
+        letter-spacing: 0.02em;
+        color: #ffffff;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        cursor: pointer;
+        transition: all .3s;
+        &:hover {
+            background-color: #353b3f;
+        }
+        &--active {
+            background-color: #0c9fb0;
+            pointer-events: none;
+        }
+    }
+    &__content {
+        display: none;
+        margin-top: 50px;
+        padding-top: 50px;
+        border-top: 1px solid #363c40;
+        &--active {
+            display: block;
+        }
+    }
+}
+
+.autopark-item {
+    padding-bottom: 50px;
+    &__top {
+        display: flex;
+        align-items: flex-end;
+        justify-content: space-between;
+        padding: 60px 0;
+        &-btn {
+            width: 282px;
+            height: 49px;
+            font-size: 13px;
+        }
+        &-hint {
+            width: 100%;
+            font-size: 13px;
+            font-weight: 400;
+            letter-spacing: 0.2em;
+            color: #108896;
+            margin-top: 20px;
+            text-align: center;
+        }
+    }
+    .breadcrumbs {
+        padding: 0;
+    }
+    &__img {
+        max-width: 1440px;
+        margin: 0 auto;
+        display: block;
+        img {
+            width: 100%;
+        }
+    }
+    &__info {
+        display: flex;
+        flex-wrap: wrap;
+        margin-top: 30px;
+        &-item {
+            display: flex;
+            align-items: center;
+            margin-top: 15px;
+            &:not(:last-child) {
+                margin-right: 54px;
+            }
+            i {
+                width: 45px;
+                flex-shrink: 0;
+                margin-right: 17px;
+                svg {
+                    width: 100%;
+                }
+            }
+            span {
+                font-size: 11px;
+                font-weight: 300;
+                letter-spacing: 0.02em;
+                color: #d6d6d6;
+            }
+            strong {
+                margin-top: 9px;
+                font-size: 16px;
+                font-weight: 400;
+                display: block;
+                white-space: nowrap;
+            }
+        }
+    }
+    &__gallery {
+        margin-top: 45px;
+        &-wrap {
+            display: flex;
+            max-width: 1440px;
+            margin: 0 auto;
+            overflow-x: auto;
+        }
+        &-item {
+            width: 238px;
+            flex-shrink: 0;
+            img {
+                width: 100%;
+                height: 100%;
+            }
+        }
+        &-hint {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            font-size: 10px;
+            font-weight: 300;
+            letter-spacing: 0.08em;
+            color: #b1b1b1;
+            margin-top: 30px;
+            svg {
+                width: 13px;
+                margin-right: 15px;
+            }
+        }
+    }
+}
+
+.properties {
+    &__inner {
+        display: flex;
+        justify-content: space-between;
+    }
+    &__left {
+        width: 480px;
+    }
+    &__right {
+        width: calc(100% - 560px);
+    }
+    &__title {
+        font-size: 20px;
+        font-weight: 700;
+        margin-bottom: 29px;
+    }
+    &__item {
+        border-top: 1px solid #292929;
+        padding: 18px 0;
+        &--p45 {
+            padding-bottom: 45px;
+        }
+        &-top {
+            font-size: 12px;
+            font-weight: 400;
+            color: #a1a1a1;
+            margin-bottom: 10px;
+        }
+        &-bottom {
+            display: flex;
+            align-items: flex-end;
+        }
+        &-left {
+            width: 235px;
+            flex-shrink: 0;
+            margin-right: 7px;
+            font-size: 18px;
+            font-weight: 500;
+            color: #fefefe;
+        }
+        &-right {
+            font-size: 16px;
+            font-weight: 400;
+            position: relative;
+            strong {
+                font-size: 20px;
+                font-weight: 700;
+            }
+            &--big {
+                font-size: 18px;
+                strong {
+                    font-size: 24px;
+                }
+            }
+        }
+        &-hint {
+            position: absolute;
+            left: 0;
+            top: 100%;
+            margin-top: 7px;
+            font-size: 12px;
+            font-weight: 400;
+            color: #a1a1a1;
+        }
+    }
+    &__links {
+        justify-content: space-between;
+        display: flex;
+        margin-top: 5px;
+    }
+    &__link {
+        &-card {
+            width: 196px;
+            height: 35px;
+            text-transform: unset;
+        }
+        &-tarif {
+            width: 232px;
+            height: 35px;
+            text-transform: unset;
+        }
+        &-rent {
+            width: 216px;
+            height: 35px;
+            margin-top: 25px;
+            text-transform: unset;
+        }
+    }
+    &__group {
+        display: flex;
+        flex-wrap: wrap;
+        padding-top: 15px;
+        border-top: 1px solid #292929;
+        &-item {
+            margin-top: 28px;
+            margin-right: 55px;
+            span {
+                font-size: 14px;
+                font-weight: 400;
+                color: #b4b4b4;
+                display: block;
+            }
+            strong {
+                margin-top: 13px;
+                font-size: 18px;
+                line-height: 125%;
+                font-weight: 700;
+                color: #fefefe;
+                display: block;
+            }
+            &:last-child {
+                width: 100%;
+                margin-right: 0;
+            }
+        }
+    }
+}
+
+.autopark-contact {
+    margin-top: 50px;
+    padding-bottom: 45px;
+    &__inner {
+        border: 2px solid #108896;
+        display: flex;
+        align-items: center;
+        padding: 32px 60px;
+    }
+    &__left {
+        flex-shrink: 0;
+        margin-right: 60px;
+    }
+    &__btn {
+        width: 282px;
+        height: 49px;
+    }
+    &__hint {
+        font-size: 12px;
+        font-weight: 400;
+        letter-spacing: 0.2em;
+        color: #108896;
+        margin-top: 18px;
+        text-align: center;
+    }
+    &__contacts {
+        display: flex;
+    }
+    &__phones {
+        display: flex;
+    }
+    &__phone {
+        margin-right: 42px;
+        display: flex;
+        svg {
+            margin-right: 23px;
+        }
+        a {
+            font-size: 24px;
+            font-family: 'Roboto Slab', serif;
+            &:hover {
+                color: #0c9fb0;
+            }
+        }
+        span {
+            display: block;
+            font-size: 12px;
+            font-weight: 300;
+            margin-top: 12px;
+            color: #b4b4b4;
+            opacity: 0.6;
+        }
+    }
+    &__whatsapp {
+        font-family: 'Roboto Slab', serif;
+        display: flex;
+        font-size: 10px;
+        line-height: 20px;
+        svg {
+            margin-right: 7px;
+            margin-left: 15px;
+            margin-top: 3.5px;
+        }
+        strong {
+            font-size: 20px;
+            line-height: 20px;
+            font-weight: 400;
+        }
+    }
+    &__instagram {
+        display: flex;
+        align-items: center;
+        height: 17px;
+        margin-left: 45px;
+        position: relative;
+        span {
+            font-size: 12px;
+            line-height: 16px;
+            font-weight: 300;
+            display: block;
+            opacity: 0.6;
+            position: absolute;
+            top: 30px;
+            left: 36px;
+            width: 100%;
+            color: #b4b4b4;
+        }
+        svg {
+            margin-right: 18px;
+        }
+        a {
+            font-size: 16px;
+            font-family: 'Roboto Slab', serif;
+            font-size: 20px;
+            display: block;
+            &:hover {
+                color: #0c9fb0;
+            }
+        }
+    }
+    &__back {
+        margin-top: 40px;
+    }
+}
+
+.autopark-advantages {
+    padding: 52px 0;
+    background-color: #16191a;
+    &__title {
+        font-size: 22px;
+        font-weight: 700;
+        padding-bottom: 29px;
+        border-bottom: 1px solid #404040;
+    }
+    &__items {
+        display: flex;
+        justify-content: space-between;
+        margin-top: 32px;
+    }
+    &__item {
+        width: calc(33.33% - 40px);
+        display: flex;
+        &-title {
+            font-size: 18px;
+            line-height: 24px;
+            font-weight: 500;
+        }
+        &-desc {
+            font-size: 13px;
+            margin-top: 12px;
+            font-weight: 300;
+            color: #c5c5c5;
+            p {
+                line-height: 19px;
+                margin-top: 3px;
+                margin-bottom: 0;
+            }
+        }
+        i {
+            margin-right: 30px;
+            width: 52px;
+            flex-shrink: 0;
+            display: flex;
+            justify-content: center;
+        }
+        svg {
+            max-width: 100%;
+            margin-top: 3px;
+        }
+    }
+}
+
+.autopark-info {
+    &__top {
+        display: flex;
+        align-items: flex-end;
+        justify-content: space-between;
+        padding: 40px 0 35px;
+    }
+    &__title {
+        font-size: 24px;
+        font-weight: 500;
+        i {
+            color: #5f686b;
+        }
+        span {
+            color: #0fa1b2;
+        }
+    }
+    &__desc {
+        font-size: 18px;
+        font-weight: 400;
+        margin-top: 10px;
+    }
+    &__tabs {
+        display: flex;
+        align-items: center;
+    }
+    &__tab {
+        margin-left: 8px;
+        background-color: #1d2225;
+        border-radius: 23px;
+        padding: 0 35px;
+        height: 46px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        font-size: 13px;
+        font-weight: 400;
+        text-transform: uppercase;
+        letter-spacing: 0.02em;
+        color: #ffffff;
+        transition: all .3s;
+        &:hover {
+            cursor: pointer;
+            background-color: #353b3f;
+        }
+        span {
+            position: relative;
+            &:before {
+                content: '';
+                position: absolute;
+                z-index: 1;
+                height: 1px;
+                width: 100%;
+                top: 100%;
+                margin-top: 4px;
+                left: 0;
+                border-bottom: 1px dashed rgba(#5a5e60, 0.7);
+            }
+        }
+        &--active {
+            background-color: #035961;
+            pointer-events: none;
+            span:before {
+                padding-bottom: 0;
+                border-color: transparent;
+            }
+        }
+    }
+}
+
+.autopark-table {
+    overflow-x: auto;
+    width: 100%;
+    padding-bottom: 20px;
+    position: relative;
+    &:before {
+        content: '';
+        position: absolute;
+        z-index: 1;
+        width: 100%;
+        background-color: #035961;
+        height: 67px;
+        top: 0;
+        left: 0;
+    }
+    &__content {
+        display: none;
+        &--active {
+            display: block;
+        }
+    }
+    &__head {
+        background-color: #035961;
+        height: 67px;
+        display: flex;
+        align-items: center;
+        position: relative;
+        z-index: 2;
+        min-width: 1140px;
+        &-item {
+            flex-shrink: 0;
+            background-color: #035961;
+            flex-grow: 1;
+            &:nth-child(1) {
+                width: 260px;
+            }
+            &:nth-child(2),
+            &:nth-child(3),
+            &:nth-child(4),
+            &:nth-child(5),
+            &:nth-child(6) {
+                width: 170px;
+                margin-right: 3px;
+                padding-left: 4px;
+            }
+            &:nth-child(6) {
+                margin-right: 0;
+            }
+            &-title {
+                font-size: 16px;
+                font-weight: 700;
+                letter-spacing: 0.02em;
+                display: block;
+                margin-top: 5px;
+                &--big {
+                    font-size: 18px;
+                }
+                .star {
+                    color: #30d8eb;
+                }
+            }
+            &-subtitle {
+                display: block;
+                font-size: 10px;
+                font-weight: 700;
+                letter-spacing: 0.02em;
+            }
+        }
+    }
+    &__items {
+        margin-top: 5px;
+        min-width: 1140px;
+    }
+    &__item {
+        display: flex;
+        min-height: 80px;
+        border-bottom: 1px solid #303030;
+        &-col {
+            flex-shrink: 0;
+            padding: 20px 0;
+            flex-grow: 1;
+            &:nth-child(1) {
+                width: 260px;
+                padding-right: 60px;
+            }
+            &:nth-child(2),
+            &:nth-child(3),
+            &:nth-child(4),
+            &:nth-child(5),
+            &:nth-child(6) {
+                width: 170px;
+                margin-right: 3px;
+                background-color: #191919;
+                padding: 20px 24px;
+            }
+            &:nth-child(6) {
+                margin-right: 0;
+            }
+        }
+        &:nth-child(even) {
+            .autopark-table__item-col {
+                &:nth-child(2),
+                &:nth-child(3),
+                &:nth-child(4),
+                &:nth-child(5),
+                &:nth-child(6) {
+                    background-color: #292929;
+                }
+            }
+        }
+        &-title {
+            font-size: 16px;
+            font-weight: 700;
+            display: block;
+        }
+        &-subtitle {
+            font-size: 12px;
+            font-weight: 400;
+            color: #afafaf;
+            margin-top: 5px;
+            display: block;
+        }
+        &-price {
+            font-size: 16px;
+            font-weight: 500;
+        }
+        &-desc {
+            font-size: 14px;
+            line-height: 18px;
+            font-weight: 400;
+            color: #d3d3d3;
+            &.icon {
+                display: flex;
+                svg {
+                    margin-left: 26px;
+                }
+            }
+        }
+    }
+    &__hint {
+        margin-top: 30px;
+        font-size: 14px;
+        font-weight: 300;
+        font-style: italic;
+        color: #d0d0d0;
+        &-item {
+            &:not(:first-child) {
+                margin-top: 13px;
+            }
+        }
+    }
+}
+
+.autopark-pay {
+    margin-top: 10px;
+    &__inner {
+        background-color: #050505;
+        min-height: 110px;
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        padding: 34px 70px;
+    }
+    &__title {
+        font-size: 18px;
+        font-weight: 400;
+    }
+    &__item {
+        display: flex;
+        align-items: center;
+        font-size: 14px;
+        font-weight: 400;
+        color: #cacaca;
+        i {
+            margin-right: 20px;
+            flex-shrink: 0;
+        }
+    }
+    &__btn {
+        width: 282px;
+        height: 49px;
+        margin: 54px auto 0;
+        font-size: 13px;
+    }
+    &__hint {
+        font-size: 12px;
+        font-weight: 400;
+        letter-spacing: 0.2em;
+        color: #108896;
+        text-align: center;
+        margin-top: 18px;
+    }
+}
+
+@media screen and (max-width: 1460px) {
+    .autopark-item {
+        &__img {
+            width: 100%;
+        }
+    }
+}
+
+@media screen and (max-width: 1370px) {
+    .autopark-item {
+        &__info {
+            &-item {
+                &:not(:last-child) {
+                    margin-right: 34px;
+                }
+            }
+        }
+    }
+}
+
+@media screen and (max-width: 1200px) {
+    .autopark {
+        background-size: auto 600px;
+    }
+    .properties {
+        &__left {
+            width: 435px;
+        }
+        &__right {
+            width: calc(100% - 470px);
+        }
+        &__group {
+            &-item {
+                margin-top: 20px;
+                margin-right: 30px;
+                &:nth-child(3) {
+                    margin-right: 0;
+                }
+            }
+        }
+    }
+    .autopark-contact {
+        &__inner {
+            flex-wrap: wrap;
+        }
+        &__left {
+            margin-right: 20px;
+        }
+        &__right {
+            width: 100%;
+            margin-top: 30px;
+        }
+    }
+    .autopark-advantages {
+        &__items {
+            display: block;
+            margin-top: 0;
+        }
+        &__item {
+            width: 100%;
+            margin-top: 25px;
+            i {
+                width: 40px;
+                margin-right: 25px;
+            }
+            &-title {
+                br {
+                    display: none;
+                }
+            }
+        }
+    }
+    .autopark-pay {
+        &__inner {
+            padding-left: 30px;
+            padding-right: 30px;
+        }
+    }
+}
+
+@media screen and (max-width: 992px) {
+    .autopark {
+        &__desc {
+            font-size: 11px;
+            line-height: 18px;
+            max-width: 400px;
+            padding: 0 15px;
+        }
+        &__tabs {
+            margin-top: 25px;
+            overflow-x: auto;
+            padding-left: 15px;
+        }
+        &__tab {
+            height: 35px;
+            padding: 0 27px;
+            font-size: 10px;
+            margin: 0 4px;
+            white-space: nowrap;
+            flex-shrink: 0;
+        }
+        &__content {
+            margin-top: 27px;
+            padding-top: 27px;
+        }
+    }
+    .autopark-item {
+        padding-bottom: 35px;
+        &__top {
+            padding: 24px 0;
+            &-right {
+                display: none;
+            }
+        }
+        &__info {
+            margin-top: 0;
+            &-item {
+                margin-top: 23px;
+                &:not(:last-child) {
+                    margin-right: 25px;
+                }
+                i {
+                    width: 30px;
+                    margin-right: 15px;
+                }
+                span {
+                    font-size: 9px;
+                }
+                strong {
+                    font-size: 14px;
+                    margin-top: 7px;
+                }
+            }
+        }
+        &__gallery {
+            margin-top: 35px;
+            &-wrap {
+                display: grid;
+                grid-template-columns: 1fr 1fr 1fr;
+            }
+            &-item {
+                width: unset;
+            }
+        }
+    }
+    .properties {
+        &__inner {
+            display: block;
+        }
+        &__left {
+            width: 100%;
+        }
+        &__right {
+            width: 100%;
+            margin-top: 37px;
+        }
+        &__title {
+            font-size: 16px;
+            margin-bottom: 20px;
+        }
+        &__item {
+            padding: 12px 0;
+            &--p45 {
+                padding-bottom: 35px;
+            }
+            &-top {
+                font-size: 10px;
+                margin-bottom: 8px;
+            }
+            &-left {
+                font-size: 14px;
+                line-height: 18px;
+                width: 47%;
+                margin-right: 0;
+            }
+            &-right {
+                width: 53%;
+                font-size: 14px;
+                strong {
+                    font-size: 16px;
+                }
+                &--big {
+                    font-size: 14px;
+                    strong {
+                        font-size: 18px;
+                    }
+                }
+            }
+            &-hint {
+                font-size: 10px;
+                margin-top: 5px;
+            }
+        }
+        &__links {
+            display: block;
+            margin-top: 10px;
+        }
+        &__link {
+            &-tarif {
+                margin-top: 10px;
+            }
+            &-rent {
+                margin-top: 22px;
+            }
+        }
+        &__group {
+            padding-top: 8px;
+            &-item {
+                margin-top: 17px;
+                span {
+                    font-size: 11px;
+                }
+                strong {
+                    font-size: 14px;
+                }
+            }
+        }
+    }
+    .autopark-contact {
+        &__inner {
+            padding: 23px 20px 50px;
+        }
+        &__contacts {
+            display: block;
+        }
+        &__instagram {
+            margin-left: 0;
+            margin-top: 25px;
+            svg {
+                width: 15px;
+                margin-right: 14px;
+            }
+            a {
+                font-size: 16px;
+            }
+            span {
+                font-size: 10px;
+                left: 29px;
+                top: 24px;
+                br {
+                    display: none;
+                }
+            }
+        }
+        &__btn {
+            height: 42px;
+            width: 242px;
+        }
+        &__phones {
+            display: block;
+        }
+        &__hint {
+            margin-top: 14px;
+            font-size: 10px;
+        }
+        &__phone {
+            svg {
+                width: 11px;
+                margin-right: 18px;
+                margin-top: -5px;
+            }
+            a {
+                font-size: 18px;
+            }
+            span {
+                font-size: 9px;
+                margin-top: 8px;
+            }
+        }
+        &__whatsapp {
+            padding-left: 29px;
+            margin-top: 17px;
+            strong {
+                font-size: 16px;
+            }
+            svg {
+                margin-left: 12px;
+            }
+        }
+    }
+    .autopark-advantages {
+        padding: 30px 0;
+        &__title {
+            font-size: 16px;
+            line-height: 26px;
+            padding-bottom: 17px;
+        }
+        &__item {
+            &-title {
+                font-size: 14px;
+                line-height: 20px;
+            }
+            &-desc {
+                margin-top: 5px;
+                font-size: 10px;
+                p {
+                    line-height: 16px;
+                }
+            }
+            svg {
+                margin-top: 0;
+            }
+        }
+    }
+    .autopark-info {
+        &__top {
+            display: block;
+            padding: 35px 0 25px;
+        }
+        &__tabs {
+            margin-top: 20px;
+        }
+        &__tab {
+            margin-left: 0;
+            font-size: 10px;
+            height: 38px;
+            padding: 0 30px;
+            &:not(:last-child) {
+                margin-right: 6px;
+            }
+        }
+        &__title {
+            font-size: 16px;
+            line-height: 22px;
+        }
+        &__desc {
+            margin-top: 5px;
+            font-size: 12px;
+        }
+    }
+    .autopark-table {
+        &__head,
+        &__item {
+            width: 1090px;
+            &-col {
+                &:nth-child(1) {
+                    padding-right: 15px;
+                    width: 210px;
+                }
+            }
+        }
+        &__hint {
+            font-size: 11px;
+            margin-top: 20px;
+            &-item {
+                line-height: 18px;
+            }
+        }
+    }
+    .autopark-pay {
+        &__inner {
+            flex-wrap: wrap;
+        }
+        &__title {
+            width: 100%;
+            margin-bottom: 25px;
+        }
+        &__item {
+            &:last-child {
+                i {
+                    width: 23px;
+                }
+            }
+            &-icon {
+                width: 32px;
+                margin-right: 15px;
+            }
+            svg {
+                max-width: 100%;
+            }
+            &-title {
+                font-size: 10px;
+                line-height: 16px;
+            }
+        }
+        &__btn {
+            width: 242px;
+            height: 42px;
+            font-size: 11px;
+            margin-top: 30px;
+        }
+        &__hint {
+            font-size: 10px;
+            margin-top: 14px;
+        }
+    }
+}
+
+@media screen and (max-width: 768px) {
+    .autopark {
+        &__tabs {
+            justify-content: flex-start;
+            padding-left: 15px;
+        }
+    }
+    .autopark-item {
+        &__img {
+            height: 270px;
+            width: auto;
+            position: relative;
+            img {
+                position: absolute;
+                left: 50%;
+                transform: translateX(-50%);
+                top: 0;
+                height: 100%;
+                width: auto;
+            }
+        }
+        &__gallery {
+            &-wrap {
+                grid-template-columns: 1fr 1fr;
+            }
+            &-hint {
+                margin-top: 18px;
+                font-size: 8px;
+                svg {
+                    width: 11px;
+                    margin-right: 12px;
+                }
+            }
+        }
+    }
+    .autopark-pay {
+        &__inner {
+            padding: 25px;
+            align-items: flex-start;
+        }
+        &__item {
+            display: block;
+            max-width: 33%;
+            &:not(:last-child) {
+                margin-right: 10px;
+            }
+            i {
+                display: block;
+            }
+            &-title {
+                margin-top: 11px;
+            }
+        }
+    }
+}
+
+@media screen and (max-width: 500px) {
+    .properties {
+        &__group {
+            &-item {
+                width: 50%;
+                margin-right: 0;
+                &:nth-child(3) {
+                    width: 100%;
+                }
+            }
+        }
+    }
+    .autopark-contact {
+        &__btn {
+            width: 100%;
+        }
+        &__left {
+            width: 100%;
+            margin-right: 0;
+        }
+    }
+    .autopark-info {
+        &__tab {
+            width: calc(50% - 3px);
+            padding: 0;
+        }
+    }
+}
+
+@media screen and (max-width: 390px) {
+    .autopark-pay {
+        &__inner {
+            padding: 12px;
+        }
+    }
+}
