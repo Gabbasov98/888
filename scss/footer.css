@@ -1,6 +1,8 @@
 .footer {
-  padding: 30px 0 45px;
-  background: #111; }
+  padding: 50px 0 45px;
+  background: #111;
+  position: relative;
+  z-index: 2; }
   .footer__col {
     width: 280px;
     flex-shrink: 0; }
@@ -88,6 +90,8 @@
     width: 100%; }
     .footer__info a {
       margin-right: 20px; }
+      .footer__info a:hover {
+        color: #fff; }
   .footer__pay {
     width: 114px;
     margin-left: 34px; }

@@ -1,0 +1,372 @@
+.invite--tarifs {
+  background-color: transparent;
+  margin-top: 0;
+  padding-bottom: 35px; }
+  .invite--tarifs .invite__inner {
+    margin-top: 0; }
+  .invite--tarifs .invite__left {
+    width: 461px;
+    margin-right: 60px; }
+  .invite--tarifs .invite__right {
+    padding-top: 24px;
+    flex-grow: 1;
+    max-width: unset; }
+  .invite--tarifs .advantages__items {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    row-gap: 30px;
+    margin-top: 30px; }
+    .invite--tarifs .advantages__items i {
+      margin-right: 3px; }
+
+.autopark-table--tarifs .autopark-table__item-col {
+  background-color: transparent !important;
+  padding-top: 0;
+  padding-bottom: 0;
+  display: flex;
+  align-items: center; }
+  .autopark-table--tarifs .autopark-table__item-col:nth-child(2), .autopark-table--tarifs .autopark-table__item-col:nth-child(4), .autopark-table--tarifs .autopark-table__item-col:nth-child(6) {
+    background-color: #191919 !important; }
+.autopark-table--tarifs .autopark-table__item {
+  border: none !important; }
+  .autopark-table--tarifs .autopark-table__item:nth-child(odd) {
+    color: #bcbcbc; }
+.autopark-table--tarifs .autopark-table__item {
+  min-height: 60px; }
+.autopark-table--tarifs .autopark-table__item-title {
+  font-size: 15px;
+  line-height: 20px;
+  font-weight: 400; }
+.autopark-table--tarifs .autopark-table__item-price {
+  font-size: 14px;
+  line-height: 20px;
+  font-weight: 400; }
+
+.tarifs__link-model {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 13.8px;
+  font-weight: 500;
+  text-transform: uppercase;
+  letter-spacing: 0.06em;
+  margin-top: 48px; }
+  .tarifs__link-model svg {
+    margin-right: 25px; }
+  .tarifs__link-model a {
+    text-decoration: underline;
+    color: #12a5b5; }
+
+.tarifs {
+  background-image: url(../images/tarif_bg.png);
+  background-size: cover;
+  padding: 75px 0;
+  margin-top: 70px;
+  position: relative; }
+  .tarifs__rent {
+    position: absolute;
+    top: 0;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 437px;
+    height: 44px;
+    font-size: 12px; }
+  .tarifs__title {
+    text-align: center;
+    font-family: 'Merriweather', sans-serif;
+    font-size: 26px;
+    line-height: 63px;
+    font-weight: 300; }
+  .tarifs__items {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 30px;
+    padding: 0 70px;
+    margin-top: 40px; }
+  .tarifs__item {
+    height: 313px;
+    position: relative; }
+    .tarifs__item:hover {
+      cursor: pointer; }
+      .tarifs__item:hover .tarifs__item-show {
+        opacity: 0;
+        z-index: -1; }
+      .tarifs__item:hover .tarifs__item-hidden {
+        opacity: 1;
+        z-index: 3; }
+    .tarifs__item-show {
+      padding: 25px 33px;
+      background-color: rgba(6, 6, 6, 0.4);
+      transition: all .3s;
+      position: absolute;
+      width: 100%;
+      height: 100%;
+      left: 0;
+      top: 0;
+      z-index: 2; }
+      .tarifs__item-show img {
+        width: 100%; }
+    .tarifs__item-hidden {
+      background-color: #0b0b0b;
+      padding: 40px 48px;
+      position: absolute;
+      width: 100%;
+      height: 100%;
+      left: 0;
+      top: 0;
+      opacity: 0;
+      transition: all .3s; }
+    .tarifs__item-title {
+      font-size: 22px;
+      font-weight: 400;
+      padding-bottom: 40px;
+      position: relative;
+      font-family: 'Merriweather', sans-serif; }
+      .tarifs__item-title:before {
+        content: '';
+        position: absolute;
+        z-index: 1;
+        background: #202020;
+        height: 1px;
+        width: calc(100% + 96px);
+        left: -48px;
+        bottom: 0; }
+    .tarifs__item-wrap {
+      margin-top: 40px;
+      display: flex;
+      justify-content: space-between; }
+    .tarifs__item-info span {
+      font-size: 12px;
+      font-weight: 300;
+      color: #9e9e9e;
+      display: block; }
+    .tarifs__item-info strong {
+      font-size: 18px;
+      font-weight: 500;
+      display: block;
+      margin-top: 10px; }
+    .tarifs__item-btn {
+      height: 46px;
+      width: 100%;
+      font-size: 11px;
+      margin-top: 38px; }
+
+.autopark-contact--tarif {
+  position: relative;
+  background-color: #0f7882;
+  overflow: hidden;
+  padding: 0;
+  margin: 0; }
+  .autopark-contact--tarif > img {
+    position: absolute;
+    width: 100%;
+    opacity: 0.36; }
+  .autopark-contact--tarif .autopark-contact__inner {
+    border: none;
+    background-color: transparent;
+    padding: 0;
+    min-height: 132px;
+    position: relative;
+    z-index: 2; }
+  .autopark-contact--tarif .autopark-contact__btn {
+    width: 394px; }
+  .autopark-contact--tarif .autopark-contact__phone span {
+    color: #fff; }
+  .autopark-contact--tarif .autopark-contact__instagram span {
+    width: unset;
+    color: #fff; }
+
+.club-card {
+  padding-bottom: 20px;
+  border-bottom: 1px solid #182020; }
+  .club-card__inner {
+    display: flex;
+    align-items: center; }
+  .club-card__left {
+    width: 440px; }
+  .club-card__right {
+    width: 512px;
+    margin-top: -45px; }
+    .club-card__right img {
+      width: 100%; }
+  .club-card__title {
+    font-size: 32px;
+    line-height: 48px;
+    font-weight: 400;
+    font-family: 'Merriweather', sans-serif; }
+    .club-card__title span {
+      font-size: 38px;
+      color: #179ba8; }
+  .club-card__desc {
+    font-size: 14px;
+    font-weight: 300;
+    letter-spacing: 0.02em;
+    color: #d6d6d6;
+    margin-top: 12px; }
+    .club-card__desc p {
+      line-height: 24px; }
+      .club-card__desc p:not(:last-child) {
+        margin-bottom: 20px; }
+  .club-card__btn {
+    width: 262px;
+    height: 47px;
+    margin-top: 45px;
+    font-size: 12px; }
+
+@media screen and (max-width: 1200px) {
+  .invite--tarifs {
+    padding-bottom: 30px; }
+    .invite--tarifs .invite__left {
+      width: 400px;
+      margin-right: 20px; }
+    .invite--tarifs .advantages__items {
+      gap: 15px; }
+
+  .tarifs__items {
+    padding: 0;
+    gap: 7px; }
+  .tarifs__item {
+    height: 300px; }
+
+  .autopark-contact--tarif {
+    z-index: 2; }
+    .autopark-contact--tarif > img {
+      height: 100%;
+      width: auto; }
+    .autopark-contact--tarif .autopark-contact__inner {
+      padding: 20px 0 40px; } }
+@media screen and (max-width: 992px) {
+  .invite--tarifs .invite__left {
+    margin: 0 auto; }
+
+  .tarifs {
+    padding: 45px 0 25px; }
+    .tarifs__items {
+      padding: 0;
+      gap: 7px;
+      margin-top: 20px; }
+    .tarifs__item {
+      height: 180px; }
+      .tarifs__item--active .tarifs__item-show {
+        opacity: 0;
+        z-index: -1; }
+      .tarifs__item--active .tarifs__item-hidden {
+        opacity: 1;
+        z-index: 3; }
+      .tarifs__item-show {
+        padding: 15px 20px;
+        display: flex;
+        align-items: center;
+        justify-content: center; }
+        .tarifs__item-show img {
+          height: 100%;
+          width: auto; }
+      .tarifs__item-hidden {
+        padding: 20px; }
+      .tarifs__item-title {
+        padding-bottom: 20px;
+        font-size: 14px; }
+        .tarifs__item-title:before {
+          width: calc(100% + 40px);
+          left: -20px; }
+      .tarifs__item-wrap {
+        margin-top: 20px; }
+      .tarifs__item-info span {
+        font-size: 9px; }
+      .tarifs__item-info strong {
+        font-size: 14px;
+        margin-top: 5px; }
+      .tarifs__item-btn {
+        height: 35px;
+        margin-top: 20px;
+        font-size: 9px; }
+    .tarifs__title {
+      font-size: 16px;
+      line-height: 24px; }
+
+  .autopark-contact--tarif .autopark-contact__whatsapp {
+    align-self: flex-start;
+    margin-top: -2px;
+    padding-left: 0px; }
+    .autopark-contact--tarif .autopark-contact__whatsapp span {
+      display: none; }
+    .autopark-contact--tarif .autopark-contact__whatsapp strong {
+      font-size: 14px; }
+  .autopark-contact--tarif .autopark-contact__phones {
+    display: flex; }
+  .autopark-contact--tarif .autopark-contact__phone {
+    margin-right: 20px; }
+    .autopark-contact--tarif .autopark-contact__phone svg {
+      margin-right: 10px;
+      margin-top: -2px; }
+    .autopark-contact--tarif .autopark-contact__phone a {
+      font-size: 16px; }
+  .autopark-contact--tarif .autopark-contact__right {
+    margin-top: 15px; }
+  .autopark-contact--tarif .autopark-contact__instagram {
+    margin-top: 19px; }
+
+  .club-card {
+    position: relative;
+    padding: 50px 0 60px; }
+    .club-card__left {
+      position: relative;
+      z-index: 2; }
+    .club-card__right {
+      position: absolute;
+      right: -150px;
+      top: -7px;
+      margin-top: 0;
+      width: unset;
+      pointer-events: none; }
+      .club-card__right img {
+        width: auto;
+        height: 395px; }
+    .club-card__title {
+      font-size: 20px;
+      line-height: 32px; }
+      .club-card__title span {
+        font-size: 24px; }
+    .club-card__desc {
+      font-size: 12px;
+      margin-top: 18px; }
+      .club-card__desc p {
+        line-height: 18px; }
+        .club-card__desc p:not(:last-child) {
+          margin-bottom: 10px; }
+    .club-card__btn {
+      width: 216px;
+      height: 43px;
+      margin-top: 27px;
+      font-size: 10px; } }
+@media screen and (max-width: 768px) {
+  .invite--tarifs .invite__left {
+    width: calc(100% + 30px);
+    margin-left: -15px; }
+  .invite--tarifs .advantages__items {
+    grid-template-columns: 1fr;
+    gap: 5px; }
+
+  .tarifs__link-model {
+    justify-content: flex-start;
+    padding: 0 15px;
+    font-size: 11px; }
+    .tarifs__link-model-wrap {
+      line-height: 18px; }
+    .tarifs__link-model svg {
+      margin-right: 18px; } }
+@media screen and (max-width: 600px) {
+  .tarifs__items {
+    grid-template-columns: 1fr; }
+  .tarifs__rent {
+    font-size: 10px;
+    line-height: 16px;
+    width: 242px;
+    height: 52px;
+    white-space: pre-wrap; } }
+@media screen and (max-width: 400px) {
+  .autopark-contact--tarif .autopark-contact__btn {
+    width: 100%;
+    margin-right: 0; } }
+
+/*# sourceMappingURL=tarifs.css.map */

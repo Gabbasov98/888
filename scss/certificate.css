@@ -1,0 +1,540 @@
+.certificate {
+  background-image: url(../images/certificate_bg.png);
+  background-size: 100% auto;
+  background-repeat: no-repeat;
+  padding: 0px 0 60px;
+  background-position: 0 0; }
+  .certificate--nobg {
+    background-image: none; }
+  .certificate__desc {
+    font-size: 16px;
+    line-height: 28px;
+    font-weight: 300;
+    max-width: 460px;
+    margin: 0 auto;
+    text-align: center; }
+  .certificate__desc2 {
+    font-size: 15px;
+    line-height: 26px;
+    font-weight: 300;
+    color: #d3d3d3;
+    margin: 37px auto 0;
+    max-width: 370px;
+    text-align: center; }
+  .certificate__btn {
+    width: 235px;
+    height: 47px;
+    margin: 45px auto 0; }
+  .certificate__items {
+    display: flex;
+    margin-top: 130px; }
+  .certificate__item:not(:last-child) {
+    margin-right: 75px; }
+  .certificate__item-badge {
+    height: 35px;
+    background-color: #04666f;
+    padding: 0 20px;
+    display: flex;
+    align-items: center;
+    font-size: 20px;
+    font-weight: 500;
+    color: #ffffff; }
+    .certificate__item-badge--big {
+      padding: 0 23px;
+      font-size: 26px;
+      height: 48px; }
+  .certificate__item-title {
+    font-size: 13px;
+    line-height: 20px;
+    font-weight: 300;
+    color: #dfdfdf;
+    margin-top: 15px; }
+    .certificate__item-title--big {
+      font-size: 14px; }
+  .certificate__form {
+    width: 456px;
+    margin: 75px auto 0;
+    padding: 60px 100px;
+    background-color: #111111;
+    box-shadow: 0px 0px 172px rgba(255, 255, 255, 0.15);
+    position: relative; }
+    .certificate__form-code {
+      display: flex;
+      align-items: center; }
+      .certificate__form-code input {
+        width: 177px;
+        height: 48px;
+        margin-right: 20px;
+        font-size: 14px; }
+    .certificate__form-rect {
+      width: 65px;
+      height: 65px;
+      display: block;
+      position: absolute;
+      border: 9px solid #111; }
+      .certificate__form-rect-left-top {
+        left: 0;
+        top: 0;
+        transform: translate(-50%, -50%);
+        border-right: none;
+        border-bottom: none; }
+      .certificate__form-rect-left-bottom {
+        left: 0;
+        bottom: 0;
+        transform: translate(-50%, 50%);
+        border-right: none;
+        border-top: none; }
+      .certificate__form-rect-right-top {
+        right: 0;
+        top: 0;
+        transform: translate(50%, -50%);
+        border-left: none;
+        border-bottom: none; }
+      .certificate__form-rect-right-bottom {
+        right: 0;
+        bottom: 0;
+        transform: translate(50%, 50%);
+        border-left: none;
+        border-top: none; }
+    .certificate__form-btn {
+      margin-top: 35px;
+      height: 52px;
+      width: 100%;
+      font-size: 12px; }
+  .certificate__rules {
+    margin: 38px auto 0;
+    width: 226px;
+    height: 44px;
+    font-size: 11px;
+    color: #a0a0a0;
+    border: 1px solid #3f3f3f; }
+  .certificate__hint {
+    font-size: 14px;
+    font-weight: 300;
+    color: #c0c0c0;
+    margin-top: 40px;
+    text-align: center; }
+  .certificate__contacts {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 28px; }
+    .certificate__contacts-whatsapp {
+      display: flex;
+      align-items: center; }
+      .certificate__contacts-whatsapp a {
+        font-size: 18px;
+        font-weight: 400;
+        font-family: 'Roboto Slab', sans-serif; }
+      .certificate__contacts-whatsapp span {
+        font-size: 10px;
+        font-weight: 400; }
+      .certificate__contacts-whatsapp svg {
+        margin-left: 17px;
+        margin-right: 7px; }
+      .certificate__contacts-whatsapp:hover a {
+        color: #009aa8; }
+    .certificate__contacts-phone {
+      display: flex;
+      position: relative;
+      margin-right: 35px; }
+      .certificate__contacts-phone svg {
+        margin-right: 18px; }
+      .certificate__contacts-phone a {
+        font-size: 21px;
+        font-weight: 400;
+        display: block;
+        font-family: 'Roboto Slab', sans-serif; }
+      .certificate__contacts-phone span {
+        opacity: 0.6;
+        font-size: 10px;
+        line-height: 14px;
+        font-weight: 300;
+        color: #b4b4b4;
+        display: block;
+        margin-top: 7px;
+        position: absolute;
+        left: 29px;
+        top: 100%; }
+      .certificate__contacts-phone:hover a {
+        color: #009aa8; }
+      .certificate__contacts-phone:hover path {
+        fill: #009aa8; }
+  .certificate__data {
+    margin-top: 5px;
+    position: absolute;
+    top: 100%;
+    width: 690px;
+    left: 50%;
+    transform: translateX(-50%);
+    background-color: #1b1b1b;
+    box-shadow: 0px 19px 62px 0px rgba(0, 0, 0, 0.92);
+    padding: 35px 60px;
+    z-index: 4; }
+    .certificate__data-top {
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      padding-bottom: 27px;
+      border-bottom: 1px solid #252c2c; }
+    .certificate__data-head {
+      font-size: 20px;
+      font-weight: 400; }
+    .certificate__data-row1 {
+      display: flex;
+      align-items: flex-end;
+      margin-top: 25px; }
+    .certificate__data-row2 {
+      display: flex;
+      margin-top: 40px; }
+    .certificate__data-item:not(:last-child) {
+      margin-right: 70px; }
+    .certificate__data-desc {
+      font-size: 16px;
+      font-weight: 400;
+      margin-top: 15px; }
+      .certificate__data-desc--big {
+        font-size: 22px; }
+      .certificate__data-desc--medium {
+        font-size: 18px; }
+    .certificate__data-title {
+      font-size: 13px;
+      font-weight: 300;
+      color: #aeaeae;
+      margin-top: 12px; }
+    .certificate__data-link {
+      margin-top: 14px;
+      padding: 0; }
+      .certificate__data-link span {
+        font-size: 12px;
+        padding: 0;
+        border: none;
+        color: #31afba;
+        height: unset;
+        font-weight: 300;
+        margin-right: 12px; }
+  .certificate__error {
+    position: absolute;
+    width: 100%;
+    bottom: 18px;
+    left: 0;
+    padding: 0 25px;
+    font-size: 12px;
+    font-weight: 400;
+    color: #ed4242;
+    display: flex;
+    align-items: center; }
+    .certificate__error svg {
+      margin-right: 10px; }
+
+.certificate-condition {
+  position: relative;
+  padding: 70px 0 60px; }
+  .certificate-condition__inner {
+    display: flex; }
+  .certificate-condition__right {
+    width: 220px;
+    flex-shrink: 0;
+    margin-left: 100px; }
+    .certificate-condition__right-title {
+      font-size: 20px;
+      line-height: 26px;
+      font-weight: 300;
+      color: #828282;
+      margin-top: -3px;
+      font-family: 'Merriweather', sans-serif; }
+  .certificate-condition__left {
+    flex-grow: 1;
+    max-width: 660px; }
+    .certificate-condition__left-title {
+      font-size: 24px;
+      font-weight: 300;
+      font-family: 'Merriweather', sans-serif; }
+  .certificate-condition__desc {
+    margin-top: 35px;
+    border-left: 2px solid #009aa8;
+    padding: 15px 0 15px 45px; }
+    .certificate-condition__desc p:last-child {
+      margin-bottom: 0; }
+  .certificate-condition__phone, .certificate-condition__instagram {
+    margin-top: 32px;
+    display: flex; }
+    .certificate-condition__phone svg, .certificate-condition__instagram svg {
+      margin-right: 18px; }
+    .certificate-condition__phone a, .certificate-condition__instagram a {
+      font-size: 21px;
+      font-weight: 400;
+      display: block;
+      font-family: 'Roboto Slab', sans-serif; }
+    .certificate-condition__phone span, .certificate-condition__instagram span {
+      opacity: 0.6;
+      font-size: 10px;
+      line-height: 14px;
+      font-weight: 300;
+      color: #b4b4b4;
+      display: block;
+      margin-top: 7px; }
+    .certificate-condition__phone:hover a, .certificate-condition__instagram:hover a {
+      color: #009aa8; }
+    .certificate-condition__phone:hover path, .certificate-condition__instagram:hover path {
+      fill: #009aa8; }
+  .certificate-condition__whatsapp {
+    margin-top: 30px;
+    display: flex;
+    align-items: center; }
+    .certificate-condition__whatsapp a {
+      font-size: 18px;
+      font-weight: 400;
+      font-family: 'Roboto Slab', sans-serif; }
+    .certificate-condition__whatsapp span {
+      font-size: 10px;
+      font-weight: 400; }
+    .certificate-condition__whatsapp svg {
+      margin-left: 17px;
+      margin-right: 7px; }
+    .certificate-condition__whatsapp:hover a {
+      color: #009aa8; }
+  .certificate-condition__instagram {
+    margin-top: 50px; }
+    .certificate-condition__instagram a {
+      font-size: 18px; }
+
+.certificate-hint {
+  background-image: url(../images/certificate_hint_bg.jpg);
+  background-size: cover; }
+  .certificate-hint__inner {
+    padding: 26px 0;
+    min-height: 134px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between; }
+  .certificate-hint__title {
+    font-size: 24px;
+    font-weight: 500; }
+  .certificate-hint__desc {
+    font-size: 14px;
+    line-height: 24px;
+    font-weight: 400;
+    color: #bfd8da; }
+    .certificate-hint__desc strong {
+      font-weight: 500;
+      font-size: 16px;
+      display: block; }
+  .certificate-hint__btn {
+    width: 329px;
+    height: 49px; }
+    .certificate-hint__btn svg {
+      margin-right: 19px; }
+
+.invite--certificate {
+  margin-top: 0; }
+  .invite--certificate .invite__title {
+    font-size: 32px;
+    line-height: 150%; }
+    .invite--certificate .invite__title span {
+      font-size: 38px; }
+
+@media screen and (max-width: 1200px) {
+  .certificate__item:not(:last-child) {
+    margin-right: 35px; }
+
+  .certificate-hint__title {
+    font-size: 18px; }
+  .certificate-hint__desc {
+    font-size: 12px; }
+    .certificate-hint__desc strong {
+      font-size: 14px; }
+  .certificate-hint__btn {
+    width: 266px;
+    height: 39px;
+    font-size: 11px; }
+    .certificate-hint__btn svg {
+      width: 17px;
+      height: auto;
+      margin-right: 15px; } }
+@media screen and (max-width: 992px) {
+  .certificate__desc {
+    font-size: 13px;
+    line-height: 20px; }
+  .certificate__desc2 {
+    font-size: 12px;
+    line-height: 21px;
+    margin-top: 25px; }
+  .certificate__btn {
+    width: 200px;
+    height: 40px;
+    margin-top: 25px; }
+  .certificate__items {
+    margin-top: 13px;
+    flex-wrap: wrap; }
+  .certificate__item {
+    margin-top: 28px; }
+    .certificate__item:not(:last-child) {
+      margin-right: 22px; }
+    .certificate__item-badge {
+      font-size: 14px;
+      height: 25px;
+      padding: 0 15px; }
+      .certificate__item-badge--big {
+        padding: 0 17px;
+        font-size: 18px;
+        height: 36px; }
+    .certificate__item-title {
+      font-size: 10px;
+      line-height: 16px;
+      margin-top: 10px; }
+      .certificate__item-title--big {
+        font-size: 12px; }
+  .certificate__data {
+    width: 520px;
+    padding: 23px 25px; }
+    .certificate__data-close svg {
+      width: 13px; }
+    .certificate__data-top {
+      padding-bottom: 12px;
+      align-items: flex-start; }
+    .certificate__data-head {
+      font-size: 16px;
+      line-height: 24px; }
+    .certificate__data-desc {
+      margin-top: 9px;
+      font-size: 12px; }
+      .certificate__data-desc--big {
+        font-size: 16px; }
+      .certificate__data-desc--medium {
+        font-size: 14px; }
+    .certificate__data-title {
+      font-size: 10px;
+      margin-top: 7px; }
+    .certificate__data-item {
+      margin-top: 17px; }
+      .certificate__data-item:not(:last-child) {
+        margin-right: 37px; }
+    .certificate__data-link {
+      margin-top: 9px; }
+      .certificate__data-link span {
+        font-size: 10px;
+        margin-right: 10px; }
+      .certificate__data-link svg {
+        width: 10px; }
+    .certificate__data-row1, .certificate__data-row2 {
+      margin-top: 0; }
+
+  .certificate-condition {
+    padding: 40px 0; }
+    .certificate-condition__inner {
+      display: block; }
+    .certificate-condition__left-title {
+      font-size: 16px;
+      line-height: 24px; }
+    .certificate-condition__right {
+      width: 100%;
+      margin-left: 0;
+      margin-top: 35px; }
+      .certificate-condition__right-title {
+        font-size: 15px;
+        line-height: 120%; }
+        .certificate-condition__right-title br {
+          display: none; }
+    .certificate-condition__desc {
+      margin-top: 23px;
+      padding: 10px 0 10px 23px;
+      border-width: 1px; }
+    .certificate-condition__phone, .certificate-condition__instagram {
+      margin-top: 20px; }
+      .certificate-condition__phone a, .certificate-condition__instagram a {
+        font-size: 18px; }
+    .certificate-condition__whatsapp {
+      padding-left: 29px;
+      margin-top: 17px; }
+      .certificate-condition__whatsapp a {
+        font-size: 16px; }
+    .certificate-condition__instagram a {
+      font-size: 16px; }
+    .certificate-condition__instagram svg {
+      width: 15px;
+      margin-right: 14px; }
+
+  .certificate-hint__inner {
+    display: block; }
+  .certificate-hint__desc {
+    margin-top: 13px; }
+  .certificate-hint__btn {
+    margin-top: 20px; } }
+@media screen and (max-width: 768px) {
+  .invite--certificate .invite__title {
+    font-size: 20px; }
+    .invite--certificate .invite__title span {
+      font-size: 20px; } }
+@media screen and (max-width: 576px) {
+  .certificate--nobg {
+    padding-bottom: 55px; }
+  .certificate__data {
+    width: calc(100% + 34px); }
+    .certificate__data-row1, .certificate__data-row2 {
+      flex-wrap: wrap; }
+  .certificate__form {
+    width: calc(100% - 34px);
+    padding: 31px 25px;
+    margin-top: 55px; }
+    .certificate__form-rect {
+      width: 35px;
+      height: 35px;
+      border-width: 5px; }
+    .certificate__form-code input {
+      margin-right: 15px;
+      flex-grow: 1;
+      font-size: 12px;
+      width: 160px; }
+    .certificate__form-code label {
+      font-size: 12px; }
+    .certificate__form-btn {
+      margin-top: 18px;
+      height: 48px;
+      font-size: 10px; }
+  .certificate__rules {
+    width: 190px; }
+  .certificate__hint {
+    font-size: 11px;
+    line-height: 16px;
+    margin: 20px auto 0;
+    max-width: 180px; }
+  .certificate__contacts {
+    display: block; }
+    .certificate__contacts-phone, .certificate__contacts-whatsapp {
+      justify-content: center; }
+    .certificate__contacts-phone {
+      margin-right: 0; }
+      .certificate__contacts-phone a {
+        font-size: 18px; }
+      .certificate__contacts-phone svg {
+        width: 9px;
+        margin-right: 14px; }
+      .certificate__contacts-phone > div {
+        position: relative; }
+      .certificate__contacts-phone span {
+        left: 0;
+        font-size: 9px;
+        margin-top: 5px; }
+    .certificate__contacts-whatsapp {
+      margin-top: 35px; }
+      .certificate__contacts-whatsapp a {
+        font-size: 16px; }
+      .certificate__contacts-whatsapp svg {
+        margin-left: 13px; }
+  .certificate__error {
+    bottom: 0px;
+    padding: 0 25px;
+    justify-content: center; }
+    .certificate__error svg {
+      margin-right: 5px; } }
+@media screen and (max-width: 460px) {
+  .certificate__data-item:nth-child(1) {
+    width: 100%; } }
+@media screen and (max-width: 345px) {
+  .certificate__item:nth-child(3) {
+    margin-right: 0; }
+  .certificate__item:not(:last-child) {
+    margin-right: 10px; } }
+
+/*# sourceMappingURL=certificate.css.map */

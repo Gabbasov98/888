@@ -96,22 +96,24 @@
             display: flex;
             align-items: center;
             margin-top: 15px;
+            flex-shrink: 0;
             &:not(:last-child) {
                 margin-right: 54px;
             }
             i {
-                width: 45px;
                 flex-shrink: 0;
-                margin-right: 17px;
-                svg {
-                    width: 100%;
-                }
+            }
+            svg {
+                margin-right: 19px;
+                // max-width: 40px;
+                // max-height: 40px;
             }
             span {
                 font-size: 11px;
                 font-weight: 300;
                 letter-spacing: 0.02em;
                 color: #d6d6d6;
+                white-space: nowrap;
             }
             strong {
                 margin-top: 9px;
@@ -119,20 +121,43 @@
                 font-weight: 400;
                 display: block;
                 white-space: nowrap;
+                font-family: 'Merriweather', sans-serif;
             }
         }
     }
     &__gallery {
         margin-top: 45px;
         &-wrap {
-            display: flex;
+            display: grid;
+            grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr;
+            flex-wrap: wrap;
             max-width: 1440px;
             margin: 0 auto;
             overflow-x: auto;
+            @media screen and (max-width: 1350px) {
+                grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
+            }
+            @media screen and (max-width: 1200px) {
+                grid-template-columns: 1fr 1fr 1fr 1fr;
+            }
         }
         &-item {
-            width: 238px;
             flex-shrink: 0;
+            position: relative;
+            &:hover:before {
+                opacity: 0;
+            }
+            &:before {
+                content: '';
+                position: absolute;
+                z-index: 1;
+                background-color: rgba(7, 7, 7, 0.2);
+                width: 100%;
+                height: 100%;
+                left: 0;
+                top: 0;
+                transition: all .3s;
+            }
             img {
                 width: 100%;
                 height: 100%;
@@ -271,6 +296,17 @@
             }
         }
     }
+    &__desc {
+        border-top: 1px solid #292929;
+        padding-top: 30px;
+        p {
+            margin-bottom: 0;
+            line-height: 24px;
+            &:not(:last-child) {
+                margin-bottom: 10px;
+            }
+        }
+    }
 }
 
 .autopark-contact {
@@ -281,6 +317,7 @@
         display: flex;
         align-items: center;
         padding: 32px 60px;
+        min-height: 136px;
     }
     &__left {
         flex-shrink: 0;
@@ -530,6 +567,14 @@
             flex-grow: 1;
             &:nth-child(1) {
                 width: 260px;
+                display: flex;
+                align-items: center;
+                font-size: 14px;
+                font-weight: 300;
+                letter-spacing: 0.02em;
+                svg {
+                    margin-left: 23px;
+                }
             }
             &:nth-child(2),
             &:nth-child(3),
@@ -628,8 +673,14 @@
             color: #d3d3d3;
             &.icon {
                 display: flex;
-                svg {
+                .btn {
                     margin-left: 26px;
+                    align-items: flex-start;
+                    &:hover {
+                        path {
+                            fill: #dddddd;
+                        }
+                    }
                 }
             }
         }
@@ -848,6 +899,13 @@
         &__title {
             font-size: 16px;
             margin-bottom: 20px;
+        }
+        &__desc {
+            padding-top: 10px;
+            p {
+                line-height: 18px;
+                font-size: 11px;
+            }
         }
         &__item {
             padding: 12px 0;

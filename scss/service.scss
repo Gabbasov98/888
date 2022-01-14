@@ -1,0 +1,355 @@
+.service {
+    padding-bottom: 70px;
+    &__items {
+        display: grid;
+        grid-template-columns: 1fr 1fr 1fr;
+        gap: 50px;
+    }
+    &__item {
+        padding-bottom: 70px;
+        position: relative;
+        &-img {
+            height: 400px;
+            display: block;
+            position: relative;
+            img {
+                width: 100%;
+                max-height: 100%;
+            }
+            &:before {
+                content: '';
+                position: absolute;
+                z-index: 1;
+                left: 0;
+                top: 0;
+                width: 100%;
+                height: 100%;
+                background: rgba(#01181b, 0.3);
+                transition: all .3s;
+            }
+            &:hover {
+                &:before {
+                    opacity: 0;
+                }
+            }
+        }
+        &-title {
+            font-size: 22px;
+            line-height: 32px;
+            font-weight: 400;
+            margin-top: 35px;
+            display: block;
+            &:hover {
+                color: #2b9ba7;
+            }
+        }
+        &-desc {
+            font-size: 13px;
+            line-height: 22px;
+            font-weight: 300;
+            color: #d3d3d3;
+            margin-top: 20px;
+        }
+        &-link {
+            position: absolute;
+            bottom: 20px;
+            left: 0px;
+            font-size: 14px;
+            font-weight: 400;
+            color: #2b9ba7;
+            margin-top: 40px;
+            display: flex;
+            align-items: center;
+            &:hover {
+                color: #fff;
+                path {
+                    fill: #fff;
+                }
+            }
+            svg {
+                margin-left: 17px;
+            }
+        }
+    }
+}
+
+.service-item-block {
+    padding-bottom: 20px;
+    // background-image: url(../images/service_bg.png);
+    background-size: cover;
+    background-position: 0 bottom;
+}
+
+.service-item {
+    padding: 65px 0;
+    background-color: #fff;
+    color: #272727;
+    &__desc {
+        max-width: 850px;
+        margin: 0 auto;
+        text-align: center;
+        p {
+            font-size: 16px;
+            line-height: 26px;
+            &:not(:last-child) {
+                margin-bottom: 25px;
+            }
+        }
+    }
+    &__btn {
+        width: 295px;
+        height: 51px;
+        margin: 38px auto 0;
+        font-size: 14px;
+    }
+    &__title {
+        margin-top: 50px;
+        text-align: center;
+        font-size: 30px;
+        font-weight: 300;
+        color: #121212;
+        padding-top: 50px;
+        position: relative;
+        &:before {
+            content: '';
+            position: absolute;
+            z-index: 1;
+            height: 2px;
+            width: 130px;
+            background: #009aa8;
+            top: 0;
+            left: 50%;
+            transform: translateX(-50%);
+        }
+    }
+    &__wrap {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        gap: 26px;
+        margin-top: 50px;
+    }
+    &__card {
+        border: 2px solid #f7f7f7;
+        padding: 40px 60px 35px;
+        text-align: center;
+        display: flex;
+        flex-direction: column;
+        &--hidden {
+            display: block;
+        }
+        &-quote {
+            font-size: 44px;
+            font-family: 'Merriweather', sans-serif;
+            font-weight: 900;
+            color: #009aa8;
+        }
+        &-text {
+            font-size: 14px;
+            line-height: 22px;
+            font-weight: 300;
+            font-style: italic;
+            color: #252525;
+            margin: 10px 0 28px;
+        }
+        &-user {
+            margin-top: auto;
+            &>img {
+                width: 64px;
+                height: 64px;
+                border-radius: 50%;
+            }
+        }
+        &-name {
+            font-size: 14px;
+            font-weight: 400;
+            color: #121212;
+            margin-top: 19px;
+            font-family: 'Merriweather', sans-serif;
+        }
+        &-gallery {
+            display: flex;
+            margin-top: 15px;
+            gap: 3px;
+            width: calc(100% + 90px);
+            margin-left: -45px;
+            margin-bottom: -20px;
+            justify-content: center;
+            &-item {
+                display: block;
+                position: relative;
+                width: calc(20% - calc(12px / 5));
+                &:hover::before {
+                    opacity: 1;
+                }
+                &:before {
+                    content: '';
+                    position: absolute;
+                    z-index: 1;
+                    width: 100%;
+                    height: 100%;
+                    background-color: rgba(12, 159, 176, 0.25);
+                    left: 0;
+                    top: 0;
+                    opacity: 0;
+                    transition: all .3s;
+                }
+                img {
+                    width: 100%;
+                    height: 100%;
+                }
+            }
+        }
+    }
+    &__all {
+        width: 185px;
+        height: 43px;
+        border-radius: 21.5px;
+        margin: 48px auto 0;
+        font-size: 13px;
+        text-transform: unset;
+    }
+}
+
+@media screen and (max-width: 1200px) {
+    .service {
+        &__items {
+            gap: 30px;
+        }
+        &__item {
+            &-img {
+                height: 360px;
+            }
+        }
+    }
+    .service-item {
+        &__wrap {
+            gap: 7px;
+        }
+        &__card {
+            padding: 27px;
+            &-gallery {
+                width: calc(100% + 40px);
+                margin-left: -20px;
+            }
+        }
+    }
+}
+
+@media screen and (max-width: 992px) {
+    .service {
+        padding-bottom: 30px;
+        &__items {
+            grid-template-columns: 1fr 1fr;
+        }
+        &__item {
+            padding-bottom: 45px;
+            &-img {
+                height: 400px;
+            }
+            &-title {
+                margin-top: 18px;
+                font-size: 16px;
+                line-height: 23px;
+            }
+            &-desc {
+                font-size: 11px;
+                line-height: 16px;
+                margin-top: 10px;
+            }
+            &-link {
+                font-size: 12px;
+                svg {
+                    width: 12px;
+                    margin-left: 12px;
+                }
+            }
+        }
+    }
+    .service-item {
+        padding: 30px 0;
+        &__desc {
+            p {
+                font-size: 12px;
+                line-height: 20px;
+                &:not(:last-child) {
+                    margin-bottom: 15px;
+                }
+            }
+        }
+        &__btn {
+            width: 242px;
+            height: 42px;
+            margin-top: 20px;
+            font-size: 12px;
+        }
+        &__title {
+            margin-top: 32px;
+            padding-top: 32px;
+            font-size: 20px;
+            &:before {
+                width: 90px;
+            }
+        }
+        &__wrap {
+            margin-top: 30px;
+            grid-template-columns: 1fr;
+        }
+        &__card {
+            &-quote {
+                font-size: 30px;
+            }
+            &-text {
+                font-size: 12px;
+                line-height: 18px;
+                margin-top: 10px;
+                margin-bottom: 20px;
+            }
+            &-user {
+                &>img {
+                    width: 52px;
+                    height: 52px;
+                }
+            }
+            &-name {
+                font-size: 12px;
+                margin-top: 15px;
+            }
+        }
+        &__all {
+            width: 141px;
+            height: 33px;
+            font-size: 10px;
+            margin-top: 24px;
+        }
+    }
+}
+
+@media screen and (max-width: 768px) {
+    .service {
+        &__items {
+            grid-template-columns: 1fr;
+        }
+        &__item {
+            &-img {
+                height: unset;
+            }
+            br {
+                display: none;
+            }
+        }
+    }
+}
+
+@media screen and (max-width: 576px) {
+    .service-item {
+        &__card {
+            &-gallery {
+                display: grid;
+                grid-template-columns: 1fr 1fr 1fr;
+                &-item {
+                    width: unset;
+                }
+            }
+        }
+    }
+}

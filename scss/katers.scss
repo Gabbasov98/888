@@ -1,0 +1,50 @@
+.katers {
+    background-image: url(../images/kater.png);
+    background-size: 100% auto;
+    background-repeat: no-repeat;
+    padding-bottom: 28px;
+    background-position: left 0 top -200px;
+    .autopark__desc {
+        max-width: 655px;
+    }
+    &__item {
+        &:not(:last-child) {
+            margin-bottom: 50px;
+        }
+    }
+}
+
+.katers-contact {
+    margin-top: 20px;
+    padding-bottom: 0;
+    &__title,
+    &__hint {
+        font-size: 18px;
+        line-height: 23px;
+        font-weight: 400;
+    }
+    &__hint {
+        font-size: 14px;
+        color: #38bbc9;
+    }
+}
+
+@media screen and (max-width: 992px) {
+    .katers {
+        &__item {
+            &:not(:last-child) {
+                margin-bottom: 40px;
+            }
+        }
+    }
+    .katers-contact {
+        margin-top: 15px;
+        &__title,
+        &__hint {
+            font-size: 16px;
+        }
+        &__hint {
+            font-size: 13px;
+        }
+    }
+}

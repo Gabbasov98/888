@@ -1,0 +1,294 @@
+.contacts {
+    padding-bottom: 70px;
+    &__inner {
+        display: flex;
+    }
+    &__left {
+        flex-grow: 1;
+        background-color: #16191a;
+        padding: 35px 55px 45px;
+        &-title {
+            font-size: 20px;
+            font-weight: 400;
+            color: #939393;
+            font-family: 'Merriweather', sans-serif;
+        }
+    }
+    &__right {
+        width: 350px;
+        flex-shrink: 0;
+        margin-left: 30px;
+        display: flex;
+        flex-direction: column;
+        &-item {
+            flex-grow: 1;
+            padding: 30px 44px;
+            background-color: #16191a;
+            &:not(:last-child) {
+                margin-bottom: 20px;
+            }
+        }
+        &-title {
+            font-size: 16px;
+            font-weight: 400;
+            color: #939393;
+            margin-bottom: 23px;
+            font-family: 'Merriweather', sans-serif;
+        }
+        &-instagram {
+            font-family: 'Roboto Slab', sans-serif;
+            display: flex;
+            align-items: center;
+            font-size: 16px;
+            line-height: 19px;
+            font-weight: 400;
+            span {
+                margin: 0 14px;
+            }
+            &:hover {
+                color: #009aa8;
+                path {
+                    fill: #009aa8;
+                }
+            }
+        }
+    }
+    &__phone {
+        font-size: 20px;
+        line-height: 20px;
+        font-weight: 400;
+        display: block;
+        font-family: 'Roboto Slab', sans-serif;
+        &:hover {
+            color: #009aa8;
+        }
+    }
+    &__whatsapp {
+        font-family: 'Roboto Slab', sans-serif;
+        display: flex;
+        align-items: center;
+        margin-top: 15px;
+        &:hover {
+            color: #009aa8;
+            path {
+                fill: #009aa8;
+            }
+        }
+        strong {
+            font-size: 16px;
+            font-weight: 400;
+        }
+        span {
+            font-size: 10px;
+            font-weight: 400;
+        }
+        svg {
+            margin-left: 14px;
+            margin-right: 7px;
+        }
+    }
+    &__address {
+        display: flex;
+        align-items: center;
+        margin-top: 30px;
+        &-left {
+            margin-right: 55px;
+            span {
+                font-size: 14px;
+                font-weight: 400;
+                color: #aeaeae;
+                display: block;
+                margin-top: 10px;
+            }
+            a {
+                font-size: 18px;
+                font-weight: 400;
+                display: block;
+            }
+        }
+        &-right {
+            font-size: 12px;
+            line-height: 20px;
+            font-weight: 300;
+            color: #aeaeae;
+        }
+    }
+    &__buttons {
+        margin-top: 30px;
+        display: flex;
+        align-items: center;
+    }
+    &__btn {
+        width: 223px;
+        height: 36px;
+        border: 1px solid #292c2d;
+        margin-right: 7px;
+        font-size: 12px;
+        font-weight: 300;
+        color: #d1d1d1;
+        text-transform: unset;
+        background-color: #16191a;
+        padding: 0 17px;
+        letter-spacing: -0.3px;
+        &:hover {
+            background-color: #0d6f79;
+            border-color: #0d6f79;
+            color: #fff;
+        }
+        span {
+            margin: 0 16px 0 13px;
+        }
+    }
+    &__mail {
+        margin-top: 35px;
+        display: flex;
+        align-items: center;
+        span {
+            font-size: 14px;
+            font-weight: 400;
+            color: #aeaeae;
+        }
+        a {
+            font-size: 16px;
+            font-weight: 400;
+            color: #ffffff;
+            margin-left: 20px;
+            &:hover {
+                color: #009aa8;
+            }
+        }
+    }
+}
+
+#map {
+    height: 442px;
+    width: 100%;
+}
+
+@media screen and (max-width: 1200px) {
+    .contacts {
+        &__left {
+            padding-left: 35px;
+            padding-right: 35px;
+        }
+        &__address-left {
+            margin-right: 25px;
+        }
+        &__right {
+            margin-left: 20px;
+            width: 290px;
+            &-item {
+                padding-left: 35px;
+                padding-right: 35px;
+            }
+        }
+    }
+}
+
+@media screen and (max-width: 992px) {
+    .contacts {
+        padding-bottom: 35px;
+        &__inner {
+            flex-wrap: wrap;
+        }
+        &__left {
+            padding: 25px;
+        }
+        &__right {
+            width: 100%;
+            margin-left: 0;
+            margin-top: 9px;
+            &-item {
+                padding: 25px;
+                &:not(:last-child) {
+                    margin-bottom: 9px;
+                }
+            }
+        }
+    }
+}
+
+@media screen and (max-width: 768px) {
+    .contacts {
+        &__left {
+            &-title {
+                font-size: 14px;
+            }
+        }
+        &__right {
+            &-title {
+                font-size: 14px;
+            }
+        }
+        &__address {
+            margin-top: 15px;
+            &-left {
+                a {
+                    font-size: 10px;
+                    line-height: 20px;
+                }
+                span {
+                    font-size: 11px;
+                    margin-top: 2px;
+                }
+            }
+            &-right {
+                font-size: 10px;
+                line-height: 130%;
+            }
+        }
+        &__buttons {
+            margin-top: 15px;
+            flex-wrap: wrap;
+        }
+        &__btn {
+            margin-top: 4px;
+            font-size: 10px;
+            width: 189px;
+            height: 30px;
+            img,
+            svg {
+                width: 8px;
+            }
+            span {
+                margin: 0 8px;
+            }
+        }
+        &__mail {
+            margin-top: 25px;
+            span {
+                font-size: 12px;
+            }
+            a {
+                font-size: 14px;
+                margin-left: 9px;
+            }
+        }
+        &__phone {
+            font-size: 18px;
+        }
+        &__whatsapp {
+            strong {
+                font-size: 14px;
+            }
+        }
+    }
+    #map {
+        height: 344px;
+    }
+}
+
+@media screen and (max-width: 576px) {
+    .contacts {
+        &__address {
+            display: block;
+            &-right {
+                width: 100%;
+                margin-top: 16px;
+                br {
+                    display: none;
+                }
+            }
+        }
+    }
+}

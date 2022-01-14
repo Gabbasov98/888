@@ -1,0 +1,498 @@
+.invite--tarifs {
+    background-color: transparent;
+    margin-top: 0;
+    padding-bottom: 35px;
+    .invite__inner {
+        margin-top: 0;
+    }
+    .invite__left {
+        width: 461px;
+        margin-right: 60px;
+    }
+    .invite__right {
+        padding-top: 24px;
+        flex-grow: 1;
+        max-width: unset;
+    }
+    .advantages__items {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        row-gap: 30px;
+        margin-top: 30px;
+        i {
+            margin-right: 3px;
+        }
+    }
+}
+
+.autopark-table--tarifs {
+    .autopark-table__item-col {
+        background-color: transparent !important;
+        padding-top: 0;
+        padding-bottom: 0;
+        display: flex;
+        align-items: center;
+        &:nth-child(2),
+        &:nth-child(4),
+        &:nth-child(6) {
+            background-color: #191919 !important;
+        }
+    }
+    .autopark-table__item {
+        border: none !important;
+        &:nth-child(odd) {
+            color: #bcbcbc;
+        }
+    }
+    .autopark-table__item {
+        min-height: 60px;
+    }
+    .autopark-table__item-title {
+        font-size: 15px;
+        line-height: 20px;
+        font-weight: 400;
+    }
+    .autopark-table__item-price {
+        font-size: 14px;
+        line-height: 20px;
+        font-weight: 400;
+    }
+}
+
+.tarifs__link-model {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 13.8px;
+    font-weight: 500;
+    text-transform: uppercase;
+    letter-spacing: 0.06em;
+    margin-top: 48px;
+    svg {
+        margin-right: 25px;
+    }
+    a {
+        text-decoration: underline;
+        color: #12a5b5;
+    }
+}
+
+.tarifs {
+    background-image: url(../images/tarif_bg.png);
+    background-size: cover;
+    padding: 75px 0;
+    margin-top: 70px;
+    position: relative;
+    &__rent {
+        position: absolute;
+        top: 0;
+        left: 50%;
+        transform: translate(-50%, -50%);
+        width: 437px;
+        height: 44px;
+        font-size: 12px;
+    }
+    &__title {
+        text-align: center;
+        font-family: 'Merriweather', sans-serif;
+        font-size: 26px;
+        line-height: 63px;
+        font-weight: 300;
+    }
+    &__items {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        gap: 30px;
+        padding: 0 70px;
+        margin-top: 40px;
+    }
+    &__item {
+        height: 313px;
+        position: relative;
+        &:hover {
+            cursor: pointer;
+            .tarifs__item-show {
+                opacity: 0;
+                z-index: -1;
+            }
+            .tarifs__item-hidden {
+                opacity: 1;
+                z-index: 3;
+            }
+        }
+        &-show {
+            padding: 25px 33px;
+            background-color: rgba(6, 6, 6, 0.4);
+            transition: all .3s;
+            position: absolute;
+            width: 100%;
+            height: 100%;
+            left: 0;
+            top: 0;
+            z-index: 2;
+            img {
+                width: 100%;
+            }
+        }
+        &-hidden {
+            background-color: #0b0b0b;
+            padding: 40px 48px;
+            position: absolute;
+            width: 100%;
+            height: 100%;
+            left: 0;
+            top: 0;
+            opacity: 0;
+            transition: all .3s;
+        }
+        &-title {
+            font-size: 22px;
+            font-weight: 400;
+            padding-bottom: 40px;
+            position: relative;
+            font-family: 'Merriweather', sans-serif;
+            &:before {
+                content: '';
+                position: absolute;
+                z-index: 1;
+                background: #202020;
+                height: 1px;
+                width: calc(100% + 96px);
+                left: -48px;
+                bottom: 0;
+            }
+        }
+        &-wrap {
+            margin-top: 40px;
+            display: flex;
+            justify-content: space-between;
+        }
+        &-info {
+            span {
+                font-size: 12px;
+                font-weight: 300;
+                color: #9e9e9e;
+                display: block;
+            }
+            strong {
+                font-size: 18px;
+                font-weight: 500;
+                display: block;
+                margin-top: 10px;
+            }
+        }
+        &-btn {
+            height: 46px;
+            width: 100%;
+            font-size: 11px;
+            margin-top: 38px;
+        }
+    }
+}
+
+.autopark-contact--tarif {
+    position: relative;
+    background-color: #0f7882;
+    overflow: hidden;
+    padding: 0;
+    margin: 0;
+    &>img {
+        position: absolute;
+        width: 100%;
+        opacity: 0.36;
+    }
+    .autopark-contact__inner {
+        border: none;
+        background-color: transparent;
+        padding: 0;
+        min-height: 132px;
+        position: relative;
+        z-index: 2;
+    }
+    .autopark-contact__btn {
+        width: 394px;
+    }
+    .autopark-contact__phone span {
+        color: #fff;
+    }
+    .autopark-contact__instagram span {
+        width: unset;
+        color: #fff;
+    }
+}
+
+.club-card {
+    padding-bottom: 20px;
+    border-bottom: 1px solid #182020;
+    &__inner {
+        display: flex;
+        align-items: center;
+    }
+    &__left {
+        width: 440px;
+    }
+    &__right {
+        width: 512px;
+        margin-top: -45px;
+        img {
+            width: 100%;
+        }
+    }
+    &__title {
+        font-size: 32px;
+        line-height: 48px;
+        font-weight: 400;
+        font-family: 'Merriweather', sans-serif;
+        span {
+            font-size: 38px;
+            color: #179ba8;
+        }
+    }
+    &__desc {
+        font-size: 14px;
+        font-weight: 300;
+        letter-spacing: 0.02em;
+        color: #d6d6d6;
+        margin-top: 12px;
+        & p {
+            line-height: 24px;
+            &:not(:last-child) {
+                margin-bottom: 20px;
+            }
+        }
+    }
+    &__btn {
+        width: 262px;
+        height: 47px;
+        margin-top: 45px;
+        font-size: 12px;
+    }
+}
+
+@media screen and (max-width: 1200px) {
+    .invite--tarifs {
+        padding-bottom: 30px;
+        .invite__left {
+            width: 400px;
+            margin-right: 20px;
+        }
+        .advantages__items {
+            gap: 15px;
+        }
+    }
+    .tarifs {
+        &__items {
+            padding: 0;
+            gap: 7px;
+        }
+        &__item {
+            height: 300px;
+        }
+    }
+    .autopark-contact--tarif {
+        z-index: 2;
+        &>img {
+            height: 100%;
+            width: auto;
+        }
+        .autopark-contact__inner {
+            padding: 20px 0 40px;
+        }
+    }
+}
+
+@media screen and (max-width: 992px) {
+    .invite--tarifs {
+        .invite__left {
+            margin: 0 auto;
+        }
+    }
+    .tarifs {
+        padding: 45px 0 25px;
+        &__items {
+            padding: 0;
+            gap: 7px;
+            margin-top: 20px;
+        }
+        &__item {
+            height: 180px;
+            &--active {
+                .tarifs__item-show {
+                    opacity: 0;
+                    z-index: -1;
+                }
+                .tarifs__item-hidden {
+                    opacity: 1;
+                    z-index: 3;
+                }
+            }
+            &-show {
+                // display: none;
+                padding: 15px 20px;
+                display: flex;
+                align-items: center;
+                justify-content: center;
+                img {
+                    height: 100%;
+                    width: auto;
+                }
+            }
+            &-hidden {
+                // opacity: 1;
+                padding: 20px;
+            }
+            &-title {
+                padding-bottom: 20px;
+                font-size: 14px;
+                &:before {
+                    width: calc(100% + 40px);
+                    left: -20px;
+                }
+            }
+            &-wrap {
+                margin-top: 20px;
+            }
+            &-info {
+                span {
+                    font-size: 9px;
+                }
+                strong {
+                    font-size: 14px;
+                    margin-top: 5px;
+                }
+            }
+            &-btn {
+                height: 35px;
+                margin-top: 20px;
+                font-size: 9px;
+            }
+        }
+        &__title {
+            font-size: 16px;
+            line-height: 24px;
+        }
+    }
+    .autopark-contact--tarif {
+        .autopark-contact__whatsapp {
+            align-self: flex-start;
+            margin-top: -2px;
+            padding-left: 0px;
+            span {
+                display: none;
+            }
+            strong {
+                font-size: 14px;
+            }
+        }
+        .autopark-contact__phones {
+            display: flex;
+        }
+        .autopark-contact__phone {
+            margin-right: 20px;
+            svg {
+                margin-right: 10px;
+                margin-top: -2px;
+            }
+            a {
+                font-size: 16px;
+            }
+        }
+        .autopark-contact__right {
+            margin-top: 15px;
+        }
+        .autopark-contact__instagram {
+            margin-top: 19px;
+        }
+    }
+    .club-card {
+        position: relative;
+        padding: 50px 0 60px;
+        &__left {
+            position: relative;
+            z-index: 2;
+        }
+        &__right {
+            position: absolute;
+            right: -150px;
+            top: -7px;
+            margin-top: 0;
+            width: unset;
+            pointer-events: none;
+            img {
+                width: auto;
+                height: 395px;
+            }
+        }
+        &__title {
+            font-size: 20px;
+            line-height: 32px;
+            span {
+                font-size: 24px;
+            }
+        }
+        &__desc {
+            font-size: 12px;
+            margin-top: 18px;
+            p {
+                line-height: 18px;
+                &:not(:last-child) {
+                    margin-bottom: 10px;
+                }
+            }
+        }
+        &__btn {
+            width: 216px;
+            height: 43px;
+            margin-top: 27px;
+            font-size: 10px;
+        }
+    }
+}
+
+@media screen and (max-width: 768px) {
+    .invite--tarifs {
+        .invite__left {
+            width: calc(100% + 30px);
+            margin-left: -15px;
+        }
+        .advantages__items {
+            grid-template-columns: 1fr;
+            gap: 5px;
+        }
+    }
+    .tarifs__link-model {
+        justify-content: flex-start;
+        padding: 0 15px;
+        font-size: 11px;
+        &-wrap {
+            line-height: 18px;
+        }
+        svg {
+            margin-right: 18px;
+        }
+    }
+}
+
+@media screen and (max-width: 600px) {
+    .tarifs {
+        &__items {
+            grid-template-columns: 1fr;
+        }
+        &__rent {
+            font-size: 10px;
+            line-height: 16px;
+            width: 242px;
+            height: 52px;
+            white-space: pre-wrap;
+        }
+    }
+}
+
+@media screen and (max-width: 400px) {
+    .autopark-contact--tarif {
+        .autopark-contact__btn {
+            width: 100%;
+            margin-right: 0;
+        }
+    }
+}

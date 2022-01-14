@@ -1,0 +1,325 @@
+.information-item__top {
+  justify-content: center; }
+
+.breadcrumbs-information {
+  padding: 0; }
+
+.breadcrumbs__wrap-information {
+  text-align: center; }
+
+.information {
+  padding-bottom: 60px; }
+  .information__inner {
+    display: flex;
+    justify-content: center; }
+  .information__left {
+    width: 350px;
+    margin-right: 60px;
+    flex-shrink: 0; }
+    .information__left-title {
+      font-size: 16px;
+      font-weight: 400;
+      color: #ffffff;
+      border-bottom: 1px solid #252c2c;
+      padding-bottom: 25px; }
+  .information__top-item {
+    padding: 28px 44px 35px 44px;
+    background-color: #16191a;
+    margin-bottom: 23px; }
+  .information__info {
+    display: flex;
+    align-items: center;
+    padding-top: 30px; }
+    .information__info-left {
+      margin-right: 36px;
+      flex-shrink: 0; }
+      .information__info-left strong {
+        font-size: 22px;
+        font-weight: 400;
+        color: #ffffff;
+        margin-bottom: 15px;
+        display: block; }
+      .information__info-left span {
+        font-size: 13px;
+        font-weight: 300;
+        color: #aeaeae;
+        display: block; }
+    .information__info-right strong {
+      font-size: 22px;
+      font-weight: 400;
+      color: #ffffff;
+      margin-bottom: 15px;
+      display: block; }
+    .information__info-right span {
+      font-size: 13px;
+      font-weight: 300;
+      color: #aeaeae;
+      display: block; }
+  .information__center-item {
+    padding: 28px 48px 35px 43px;
+    background-color: #16191a;
+    margin-bottom: 54px; }
+  .information__center-title {
+    font-size: 16px;
+    font-weight: 400;
+    color: #ffffff;
+    border-bottom: 1px solid #252c2c;
+    padding-bottom: 25px; }
+  .information__passport {
+    display: flex;
+    align-items: center;
+    padding-top: 30px;
+    margin-bottom: 30px; }
+    .information__passport svg {
+      width: 48px;
+      height: 33px;
+      margin-right: 20px; }
+    .information__passport-desc strong {
+      font-size: 16px;
+      line-height: 26px;
+      font-weight: 400;
+      color: #ffffff; }
+    .information__passport-desc span {
+      font-size: 12px;
+      line-height: 26px;
+      font-weight: 300;
+      color: #aeaeae;
+      display: block; }
+  .information__rights {
+    display: flex;
+    align-items: center; }
+    .information__rights svg {
+      width: 43px;
+      height: 31px;
+      margin-right: 20px; }
+    .information__rights-desc strong {
+      font-size: 16px;
+      line-height: 26px;
+      font-weight: 400;
+      color: #ffffff; }
+    .information__rights-desc span {
+      font-size: 12px;
+      line-height: 26px;
+      font-weight: 300;
+      color: #aeaeae;
+      display: block; }
+  .information__center-desc {
+    font-size: 11px;
+    line-height: 18px;
+    font-weight: 300;
+    font-style: italic;
+    color: #aeaeae;
+    margin-top: 22px;
+    margin-bottom: 0; }
+  .information__bottom-title {
+    font-size: 20px;
+    line-height: 28px;
+    font-weight: 300;
+    color: #828282;
+    margin-bottom: 30px; }
+  .information__telephone {
+    display: flex;
+    margin-bottom: 25px;
+    cursor: pointer; }
+    .information__telephone:hover {
+      color: #009aa8; }
+      .information__telephone:hover path {
+        fill: #009aa8; }
+    .information__telephone svg {
+      width: 11px;
+      height: 18px;
+      margin-right: 18px; }
+    .information__telephone path {
+      fill: #ffffff; }
+  .information__number a {
+    font-size: 21px;
+    font-weight: 400;
+    margin-bottom: 15px;
+    display: block; }
+  .information__number span {
+    font-size: 10px;
+    font-weight: 300;
+    color: #b4b4b4;
+    display: block; }
+  .information__whatsapp {
+    display: flex;
+    align-items: center;
+    margin-bottom: 40px; }
+    .information__whatsapp:hover {
+      color: #009aa8; }
+      .information__whatsapp:hover path {
+        fill: #009aa8; }
+    .information__whatsapp svg {
+      width: 15px;
+      height: 14px;
+      margin-right: 15px; }
+    .information__whatsapp-number {
+      display: flex;
+      align-items: center; }
+  .information__number-link {
+    font-size: 18px;
+    font-weight: 400; }
+  .information__whatsapp-link {
+    font-size: 10px;
+    font-weight: 300;
+    color: #b4b4b4;
+    margin-left: 10px; }
+    .information__whatsapp-link:hover {
+      color: #b4b4b4; }
+  .information__instagram {
+    display: flex; }
+    .information__instagram:hover {
+      color: #009aa8; }
+      .information__instagram:hover path {
+        fill: #009aa8; }
+    .information__instagram svg {
+      width: 18px;
+      height: 18px;
+      margin-right: 13px; }
+    .information__instagram-data a {
+      font-size: 18px;
+      font-weight: 400;
+      display: block;
+      margin-bottom: 15px; }
+    .information__instagram-data span {
+      opacity: 0.6;
+      font-size: 11px;
+      font-weight: 300;
+      color: #b4b4b4;
+      display: block;
+      cursor: pointer; }
+  .information__right {
+    flex-grow: 1; }
+  .information__right-item {
+    background-color: #16191a; }
+    .information__right-item:not(:last-child) {
+      margin-bottom: 8px; }
+  .information__item-show {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 22px 33px 22px 38px;
+    transition: all 0.3s; }
+    .information__item-show:hover {
+      color: #009aa8;
+      cursor: pointer; }
+      .information__item-show:hover path {
+        fill: #009aa8; }
+    .information__item-show svg {
+      width: 14px;
+      height: 8px;
+      transition: all 0.3s; }
+  .information__right-title {
+    font-size: 18px;
+    line-height: 26px;
+    font-weight: 400; }
+  .information__item-hide {
+    padding: 12px 36px 25px 36px;
+    display: none; }
+  .information__hide-text {
+    font-size: 14px;
+    line-height: 24px;
+    font-weight: 300;
+    color: #e7e7e7; }
+    .information__hide-text a {
+      color: #1396a3; }
+  .information__right-item--active {
+    background-color: #1e2223; }
+    .information__right-item--active .information__item-show svg {
+      transform: rotate(180deg);
+      transition: all 0.3s; }
+    .information__right-item--active .information__item-hide {
+      display: block; }
+
+@media screen and (max-width: 992px) {
+  .information {
+    padding-bottom: 28px; }
+    .information__inner {
+      display: block;
+      padding-top: 7px;
+      position: relative;
+      padding-bottom: 259px; }
+    .information__left {
+      width: 100%;
+      margin-right: 0;
+      margin-bottom: 24px; }
+      .information__left-title {
+        font-size: 14px;
+        padding-bottom: 20px; }
+    .information__top-item {
+      padding: 20px 25px 25px 25px;
+      margin-bottom: 9px; }
+    .information__info {
+      padding-top: 20px; }
+      .information__info-left {
+        margin-right: 45px; }
+        .information__info-left strong {
+          font-size: 18px;
+          margin-bottom: 12px; }
+        .information__info-left span {
+          font-size: 11px; }
+      .information__info-right strong {
+        font-size: 18px;
+        margin-bottom: 12px; }
+      .information__info-right span {
+        font-size: 11px; }
+    .information__center-item {
+      padding: 20px 25px 25px 25px;
+      margin-bottom: 0; }
+    .information__center-title {
+      font-size: 14px;
+      padding-bottom: 20px; }
+    .information__passport {
+      margin-bottom: 22px;
+      padding-top: 20px; }
+      .information__passport-desc strong {
+        font-size: 14px;
+        margin-bottom: 13px; }
+    .information__rights-desc strong {
+      font-size: 14px;
+      margin-bottom: 13px; }
+    .information__center-desc {
+      font-size: 10px; }
+    .information__bottom-item {
+      position: absolute;
+      left: 22px;
+      bottom: 0; }
+    .information__bottom-title {
+      font-size: 16px;
+      line-height: 24px;
+      margin-bottom: 25px; }
+    .information__telephone {
+      margin-bottom: 18px; }
+    .information__number a {
+      font-size: 18px;
+      margin-bottom: 10px; }
+    .information__whatsapp {
+      margin-bottom: 22px; }
+      .information__whatsapp-number {
+        font-size: 16px; }
+        .information__whatsapp-number-link {
+          font-size: 16px; }
+      .information__whatsapp-link {
+        margin-left: 14px; }
+    .information__instagram-data a {
+      font-size: 16px;
+      margin-bottom: 10px; }
+    .information__instagram-data span {
+      font-size: 10px; }
+    .information__right-item:not(:last-child) {
+      margin-bottom: 5px; }
+    .information__item-show {
+      padding: 12px 20px 12px 24px; }
+      .information__item-show svg {
+        width: 9px;
+        height: 5px; }
+    .information__item-hide {
+      padding: 10px 23px 15px 23px; }
+    .information__right-title {
+      font-size: 14px;
+      line-height: 20px; }
+    .information__hide-text {
+      font-size: 11px;
+      line-height: 18px; } }
+
+/*# sourceMappingURL=information.css.map */
